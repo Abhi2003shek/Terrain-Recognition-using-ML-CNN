@@ -1,0 +1,157 @@
+.content-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 0; /* Move behind other elements */
+  background-image: url("https://ik.imagekit.io/whn0gomux/mountains-4832106_1280.jpg?updatedAt=1713509485957");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container {
+  z-index: 9999;
+}
+
+/* Style for the content box */
+.content-box {
+  position: absolute;
+  z-index: 1; /* Ensure content box is on top */
+  width: 60%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  border: 1px solid #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+/* Styles for image section */
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploaded-image-container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #72727265;
+  border: 1px dashed #000000;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+/* Styles for upload section */
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.upload-input {
+  display: none;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ec36a3, #9b3bd3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  font-size: 14px;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.upload-button:active {
+  transform: scale(0.95);
+}
+
+.placeholder-text {
+  font-size: 16px;
+  color: #999;
+}
+
+.file-name {
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+}
+
+/* Styles for prediction section */
+.prediction {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Styles for box container */
+.box-container {
+  position: absolute; 
+  margin-top: 40px;/* Position relative to the content */
+  z-index: 1; /* Ensure box container is on top of content */
+  top: calc(50% + 10rem); /* Adjust top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center; /* Adjust alignment as needed */
+  align-items: center;
+  width: 60%;
+  height: 5%; /* Adjust width as needed */
+  padding: 1.5rem 1rem; /* Adjust padding as needed */
+  border-radius: 20px; /* Curved edges */
+  background-color: rgba(255, 255, 255, 0.8); /* White translucent background */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+
+.box {
+  /* margin: 0 20px; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Styles for graph container */
+.graph-container {
+  margin-top: 400px;
+  text-align: center;
+}
+
+.graph-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-right: 400px;
+}
+/* .upload-button-1{
+  z-index: 99;
+} */
